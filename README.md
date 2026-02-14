@@ -1,6 +1,15 @@
 # 🍽️ AGM CANTEEN
 **QR-based digital ordering platform for college canteens**
 
+## 🚀 Live Demo
+
+🔗 Hosting URL:  
+https://gen-lang-client-0776017148.web.app  
+
+🔗 Firebase Project Console:  
+https://console.firebase.google.com/project/gen-lang-client-0776017148/overview  
+
+
 ## ⚡ Quick Start
 
 ### 1. Setup
