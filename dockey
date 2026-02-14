@@ -1,0 +1,54 @@
+firebase existing google cloud project 
+unique identifier:gen-lang-client-0033888219
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD9ToAULN-zizjQ2K56wO6Nas2sAOx_0dA",
+  authDomain: "gen-lang-client-0033888219.firebaseapp.com",
+  projectId: "gen-lang-client-0033888219",
+  storageBucket: "gen-lang-client-0033888219.firebasestorage.app",
+  messagingSenderId: "715381854117",
+  appId: "1:715381854117:web:f3bfb1867d0f648d95e24c",
+  measurementId: "G-DHM2L369YB"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+  apiKey: "AIzaSyD9ToAULN-zizjQ2K56wO6Nas2sAOx_0dA"
+  authDomain: "gen-lang-client-0033888219.firebaseapp.com"
+  projectId: "gen-lang-client-0033888219"
+
+
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBalD-EyWhDVb-e0uLYIR2wputzlDNFmeM",
+  authDomain: "gen-lang-client-0776017148.firebaseapp.com",
+  projectId: "gen-lang-client-0776017148",
+  storageBucket: "gen-lang-client-0776017148.firebasestorage.app",
+  messagingSenderId: "356156649682",
+  appId: "1:356156649682:web:fc0e58eeea9f945b667d0b",
+  measurementId: "G-S41KHQQDTS"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

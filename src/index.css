@@ -1,0 +1,219 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --primary: #2e7d32;
+  --primary-dark: #1b5e20;
+  --primary-light: #4caf50;
+  --accent: #ff6b35;
+  --cream: #f5f5dc;
+  --white: #ffffff;
+  --shadow: #e0e0e0;
+  --text-dark: #212121;
+  --text-gray: #757575;
+  --warning-cream: #fff3e0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--cream);
+  color: var(--text-dark);
+}
+
+.bg-app {
+  background: var(--cream);
+}
+
+.btn-3d {
+  background: linear-gradient(180deg, var(--primary-light) 0%, var(--primary) 100%);
+  border: 2px solid var(--primary-dark);
+  border-radius: 8px;
+  box-shadow: 0 4px 0 var(--primary-dark), 0 6px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: all 0.1s ease;
+}
+
+.btn-3d:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--primary-dark);
+}
+
+.btn-3d-lg {
+  background: linear-gradient(180deg, var(--primary-light) 0%, var(--primary) 100%);
+  border: 4px solid var(--primary-dark);
+  border-radius: 12px;
+  box-shadow: 0 6px 0 var(--primary-dark), 0 8px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: relative;
+}
+
+.btn-3d-lg::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.card-cream {
+  background: var(--white);
+  border: 1px solid var(--shadow);
+  box-shadow: 0 4px 8px var(--shadow);
+  border-radius: 12px;
+}
+
+.tab-active {
+  background: var(--cream);
+  border-bottom: 3px solid var(--primary);
+  color: var(--primary);
+}
+
+.tab-inactive {
+  background: var(--white);
+  color: var(--text-gray);
+}
+
+.banner-warning {
+  background: var(--warning-cream);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+
+.category-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 2px 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.category-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.category-scroll::-webkit-scrollbar-thumb {
+  background: rgba(27, 94, 32, 0.3);
+  border-radius: 999px;
+}
+
+.category-chip {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 8px 14px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  color: var(--text-dark);
+  scroll-snap-align: start;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.category-chip:active {
+  transform: translateY(1px);
+}
+
+.category-chip-active {
+  border-color: var(--primary);
+  box-shadow: 0 10px 16px rgba(46, 125, 50, 0.18);
+}
+
+.category-chip-image-wrap {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(46, 125, 50, 0.25);
+  background: #fdfbf2;
+}
+
+.category-chip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-chip-image-fallback {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.category-chip-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.category-chip-underline {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 6px;
+  height: 4px;
+  background: transparent;
+  border-radius: 999px;
+}
+
+.category-chip-underline-active {
+  background: var(--primary);
+}
+
+.btn-solid {
+  background: var(--primary);
+  border: 2px solid var(--primary-dark);
+  border-radius: 8px;
+  box-shadow: none;
+  color: #fff;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.btn-solid:active {
+  transform: translateY(1px);
+}
+
+.kitchen-ok {
+  background: #ffffff;
+  border: 3px solid #111827;
+  border-radius: 12px;
+  color: #111827;
+  letter-spacing: 0.08em;
+  box-shadow: 0 6px 0 rgba(17, 24, 39, 0.4);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.kitchen-ok:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 rgba(17, 24, 39, 0.4);
+}
+
